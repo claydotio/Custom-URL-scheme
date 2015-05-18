@@ -33,7 +33,7 @@
       <clobbers target="window.plugins.launchmyapp" />
     </js-module>
 
-    <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+    <!-- <config-file target="*-Info.plist" parent="CFBundleURLTypes">
       <array>
         <dict>
           <key>CFBundleURLSchemes</key>
@@ -42,7 +42,7 @@
           </array>
         </dict>
       </array>
-    </config-file>
+    </config-file> -->
   </platform>
 
   <!-- android -->
@@ -68,7 +68,7 @@
       </intent-filter>
     </config-file>
   </platform>
-  
+
   <!-- windows8 -->
   <platform name="windows8">
     <config-file target="package.appxmanifest" parent="/Package/Applications/Application/Extensions">
@@ -76,12 +76,12 @@
         <Protocol Name="$URL_SCHEME" />
       </Extension>
     </config-file>
-    
+
     <js-module src="www/windows/LaunchMyApp.js" name="LaunchMyApp">
       <clobbers target="window.plugins.launchmyapp" />
     </js-module>
   </platform>
-	
+
   <!-- windows -->
   <platform name="windows">
     <config-file target="package.windows.appxmanifest" parent="/Package/Applications/Application/Extensions">
